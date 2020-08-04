@@ -1,0 +1,230 @@
+#booking_button {
+  cursor: pointer;
+}
+
+#form_close_button {
+  float: right;
+  /* margin-top: -10px;
+  margin-right: -10px; */
+  cursor: pointer;
+  color: gray;
+  z-index: 100;
+  position: relative;
+  z-index: 5;
+}
+
+#form_close_button:hover {
+  color: black;
+  font-weight: bold;
+}
+
+#booking_form {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#booking_form form {
+  background-image: url(../images/logo/logo9.png);
+  background-size: 30%;
+  background-position: top;
+  background-position-x: left;
+  background-repeat: no-repeat;
+  box-shadow: 0px 0px 10px gray;
+  height: 95vh;
+  background-color: #fffcf3;
+  border: 5px solid #ccc5af;
+  border-radius: 10px;
+  width: 600px;
+  margin: 20px auto;
+  padding: 30px 30px 15px 30px;
+  line-height: 2.3;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  animation-name: from_top;
+  animation-duration: 0.6s;
+}
+
+@keyframes from_top {
+  from {
+    top: -500px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+.block {
+  width: 100%;
+  display: block;
+  margin: 5px auto;
+  opacity: 0.8;
+  color: black;
+  /* box-shadow: 15px, 5px, 5px, black; */
+}
+
+label.title {
+  display: inline-block;
+  width: 120px;
+  text-align: right;
+}
+
+input[type="radio"] {
+  margin-right: 0;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+label.service_select {
+  font-size: 0.8rem;
+  vertical-align: middle;
+}
+
+label.baby_gender {
+  font-size: 0.8rem;
+  vertical-align: middle;
+  opacity: 0.8;
+}
+
+input[type="text"] {
+  width: 59%;
+  background-color: #fffcf3;
+  border: none;
+  border-bottom: 1px dashed black;
+  opacity: 0.8;
+  color: black;
+}
+
+#choose_survice {
+  width: 59%;
+  background-color: #fffcf3;
+  border: none;
+  border-bottom: 1px dashed black;
+  opacity: 0.8;
+  color: black;
+}
+
+input[type="date"] {
+  width: 59%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px dashed black;
+  opacity: 0.8;
+  color: black;
+}
+
+label[for="note"],
+textarea {
+  vertical-align: top;
+}
+
+textarea {
+  margin-top: 10px;
+  width: 59%;
+  height: 70px;
+  background: transparent;
+  border: none;
+  border: 1px dashed black;
+  opacity: 0.8;
+  color: black;
+}
+
+.center {
+  text-align: center;
+  margin-top: 50px;
+}
+
+input[type="submit"] {
+  background: lightgray;
+  color: black;
+  font-size: 0.9rem;
+  box-shadow: 1px 1px 1px lightgray;
+  border-radius: 40px;
+  border: none;
+  transition: 0.1s ease-in-out;
+  cursor: pointer;
+  opacity: 0.7;
+  display: block;
+  width: 30%;
+  margin: -30px auto 50px;
+  padding: 0;
+  text-decoration: none;
+  box-shadow: 1px 1px 3px gray;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.9;
+  font-weight: bold;
+  transform: translateX(-2px) translateY(-1px);
+}
+
+@media (max-width: 605px) {
+  #form_close_button {
+    float: right;
+    /* margin-top: -10px; */
+    margin-right: 10px;
+    cursor: pointer;
+    color: gray;
+    z-index: 100;
+    position: relative;
+  }
+  #booking_form form {
+    width: 95%;
+    margin: 5% auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+  }
+  label.title {
+    width: 90px;
+    font-size: 0.7rem;
+  }
+  input[type="text"] {
+    width: 50%;
+  }
+  #choose_survice {
+    width: 50%;
+  }
+  .block {
+    margin: 0 auto;
+  }
+  label.service_select {
+    font-size: 0.6rem;
+    vertical-align: middle;
+  }
+  input[type="date"] {
+    width: 50%;
+    font-size: 0.6rem;
+  }
+  textarea {
+    width: 50%;
+  }
+  input[type="submit"] {
+    background: lightgray;
+    color: black;
+    font-size: 0.9rem;
+    box-shadow: 1px 1px 1px lightgray;
+    border-radius: 40px;
+    border: none;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    opacity: 0.7;
+    display: block;
+    width: 30%;
+    margin: 10px auto 10px;
+    padding: 0;
+    text-decoration: none;
+  }
+}

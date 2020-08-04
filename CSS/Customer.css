@@ -1,0 +1,136 @@
+@import "header.css";
+@import "footer.css";
+@import "Booking.css";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans TC", sans-serif;
+}
+/* nav */
+#nav_customer {
+  font-weight: bold;
+  opacity: 0.7;
+}
+#vertical_nav_customer {
+  font-weight: bold;
+  opacity: 1;
+}
+
+.phone_check {
+  box-shadow: 0 0 10px gray;
+  width: 415px;
+  margin: 100px auto 300px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.upperimg {
+  /* border: 1px solid blue; */
+  width: 100%;
+  height: 280px;
+  background-image: url(../images/phone_check.jpg);
+  background-size: 100%;
+  background-position: top;
+}
+.lowerimg {
+  /* border: 1px solid red; */
+  width: 100%;
+  /* height: 280px; */
+  background-image: url(../images/phone_check.png);
+  background-size: 100%;
+  margin-top: -120px;
+  /* transform: translateY(-120px); */
+  /* margin-bottom: 100px; */
+  padding: 100px;
+  /* padding-right: 60px;
+    padding-left: 60px; */
+  line-height: 2;
+}
+#phone_or_email {
+  font-size: 1rem;
+  opacity: 0.8;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  color: blue;
+  height: 20px;
+  background-color: #fff;
+}
+.lowerimg button {
+  background: lightgray;
+  color: black;
+  font-size: 0.9rem;
+  box-shadow: 1px 1px 1px lightgray;
+  border-radius: 40px;
+  border: none;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  opacity: 0.7;
+  display: block;
+  width: 50%;
+
+  margin: -15px auto 30px;
+  /* margin-bottom: 30px; */
+}
+.lowerimg button:hover {
+  opacity: 0.9;
+}
+#input_code {
+  font-size: 1rem;
+  vertical-align: middle;
+  margin-top: 30px;
+  /* display: block; */
+  margin: 30px auto 0;
+  text-align: center;
+  opacity: 0.7;
+  background-color: #fff;
+}
+#verify_code {
+  font-size: 1rem;
+  opacity: 0.9rem;
+  margin: 0 auto;
+  /* display: block; */
+  width: 58%;
+  color: blue;
+  height: 20px;
+  background-color: #fff;
+}
+#verify_code_button {
+  background: lightgray;
+  color: black;
+  font-size: 0.9rem;
+  box-shadow: 1px 1px 1px lightgray;
+  border-radius: 40px;
+  border: none;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  opacity: 0.7;
+  display: block;
+  width: 50%;
+  margin: 10px auto 30px;
+  padding: 0;
+  margin-top: 10px;
+}
+#verify_code_button:hover {
+  opacity: 0.9;
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 450px) {
+  .phone_check {
+    width: 95%;
+    /* margin: 100px 1px 300px; */
+  }
+  .upperimg {
+    background-size: cover;
+  }
+  .lowerimg {
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: -130px;
+  }
+}

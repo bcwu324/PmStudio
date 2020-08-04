@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/Customer.css" />
+    <link rel="stylesheet" href="./CSS/Booking.css" />
+    <link rel="icon" href="pmstudio_icon.ico" type=”image/x-icon”>
+  </head>
+
+  <body>
+    <header></header>
+    <div id="booking_form"></div>
+    <!-- validation ======================================================================-->
+    <div class="phone_check">
+      <div class="upperimg"></div>
+      <div class="lowerimg">
+        <input
+          type="text"
+          id="phone_or_email"
+          placeholder="輸入電話號碼或E-mail…"
+        /><br />
+        <button>送出驗証碼</button><br />
+        <label for="verify_code" id="input_code">輸入驗証碼:</label>
+        <input type="text" id="verify_code" /><br />
+        <a href="./Customer2.html"
+          ><input id="verify_code_button" type="submit" value="確認"
+        /></a>
+      </div>
+    </div>
+    <footer></footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script type="text/javascript " src="./JS/header.js "></script>
+    <script type="text/javascript " src="./JS/footer.js "></script>
+    <script type="text/javascript " src="./JS/booking.js "></script>
+  </body>
+</html>

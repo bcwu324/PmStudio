@@ -1,0 +1,255 @@
+@import "header.css";
+@import "footer.css";
+@import "Booking.css";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans TC", sans-serif;
+}
+/* nav */
+#nav_service {
+  font-weight: bold;
+  opacity: 0.7;
+}
+#vertical_nav_service {
+  font-weight: bold;
+  opacity: 1;
+}
+
+div.banner {
+  background-image: url(../images/banner/003.jpg);
+  background-size: cover;
+  margin: 60px auto 20px;
+  /* padding: 15% 0; */
+  opacity: 0.9;
+  background-position: center;
+  border: 0;
+  width: 100%;
+  height: 560px;
+}
+
+div.service {
+  width: 90%;
+  /* height: 750px; */
+  margin: 7% auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* align-content: space-between; */
+}
+
+div.common {
+  width: 550px;
+  height: 350px;
+  border: 1px solid lightgray;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 248, 225, 0.3);
+  transition: 0.3s;
+  text-align: left;
+  margin: 25px 0;
+  overflow: hidden;
+}
+
+div.common:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 10px 10px gray;
+}
+
+h3 {
+  margin-bottom: 0;
+  opacity: 0.8;
+}
+
+div.pic {
+  width: 150px;
+  height: 150px;
+  float: right;
+  border-radius: 5px;
+}
+
+span.newborn_article {
+  opacity: 0.7;
+}
+
+span.maternity_article {
+  opacity: 0.7;
+}
+
+span.family_article {
+  opacity: 0.7;
+}
+
+span.art_article {
+  opacity: 0.7;
+}
+
+.newborn_pic {
+  background-image: url(../images/album/freepik/4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.maternity_pic {
+  background-image: url(../images/album/freepik/25.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.family_pic {
+  background-image: url(../images/Service/family.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.art_pic {
+  background-image: url(../images/Service/art.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+div.service a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* cards */
+
+.cards {
+  width: 80%;
+  margin: 80px auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 324px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 30px 10px;
+  font-size: 0.9rem;
+  opacity: 0.9;
+  box-shadow: 0 1px 2px lightgray;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 15px lightgray;
+}
+
+.card .card_title {
+  padding: 12px;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.card .card_pic {
+  height: 194px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-color: gray;
+  transition: 1s ease-in-out;
+  overflow: hidden;
+}
+.card_pic img {
+  width: 100%;
+  transition: 1s ease-in-out;
+  cursor: pointer;
+}
+
+.card_pic img:hover {
+  transform: scale(1.1);
+}
+.supporting_text .booking_button {
+  background: lightgray;
+  color: black;
+  font-size: 0.9rem;
+  border-radius: 40px;
+  border: none;
+  transition: 0.1s ease-in-out;
+  cursor: pointer;
+  opacity: 0.9;
+  display: block;
+  width: 40%;
+  margin: 20px auto 10px;
+  text-decoration: none;
+  transform: translateX(23px);
+  box-shadow: 1px 1px 3px gray;
+}
+.supporting_text .booking_button:hover {
+  opacity: 1;
+  font-weight: bold;
+  transform: translateX(20px) translateY(-1px);
+}
+.card .supporting_text {
+  height: 60px;
+  background-color: white;
+  opacity: 0.7;
+}
+
+.card .supporting_text_click {
+  height: 100%;
+}
+
+.supporting_text_left {
+  display: inline-block;
+  padding: 12px;
+  width: 85%;
+  height: 100%;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.supporting_text_right {
+  display: inline-block;
+  background-color: white;
+  width: 13%;
+  height: 30px;
+  margin-top: 0;
+  opacity: 0.6;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+#arrowBtn {
+  cursor: pointer;
+}
+#arrowBtn:hover {
+  cursor: pointer;
+  font-weight: bold;
+  transform: scale(1.1);
+}
+
+@media (min-width: 1200px) {
+  .cards {
+    width: 1140px;
+  }
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+  .cards {
+    width: 960px;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .cards {
+    width: 720px;
+  }
+}
+@media (max-width: 767px) and (min-width: 576px) {
+  .cards {
+    width: 540px;
+  }
+}
+@media (max-width: 575px) {
+  .cards {
+    width: 100%;
+  }
+  .card {
+    width: 350px;
+    margin: 30px 0 10px 0;
+  }
+}
